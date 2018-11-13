@@ -1,0 +1,13 @@
+{
+  "title": "POJO 类中布尔类型的变量，都不要加 is 前缀",
+  "type": "CODE_SMELL",  
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "MINOR"
+}

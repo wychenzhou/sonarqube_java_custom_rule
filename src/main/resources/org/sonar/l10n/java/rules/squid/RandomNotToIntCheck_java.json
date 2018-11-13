@@ -1,0 +1,13 @@
+{
+  "title": "Math.random()返回是double类型，注意取值的范围[0,1)，如果想获取整数类型的随机数，不要将x放大10的若干倍然后取整，直接使用Random对象的nextInt或者nextLong方法",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "company"
+  ],
+  "defaultSeverity": "Minor"
+}

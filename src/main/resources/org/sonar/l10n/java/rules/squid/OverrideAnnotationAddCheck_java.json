@@ -1,0 +1,13 @@
+{
+  "title": "所有的覆写方法，必须加@Override注解",
+  "type": "CODE_SMELL",  
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "MAJOR"
+}

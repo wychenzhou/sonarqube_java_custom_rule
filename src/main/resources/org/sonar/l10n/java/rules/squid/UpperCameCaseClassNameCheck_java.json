@@ -1,0 +1,13 @@
+{
+  "title": "类命名驼峰检查 类名使用UpperCamelCase风格，必须遵从驼峰形式，领域模型的相关命名除外",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "MAJOR"
+}

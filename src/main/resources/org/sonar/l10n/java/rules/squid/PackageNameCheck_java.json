@@ -1,0 +1,13 @@
+{
+  "title": "包名统一使用小写，点分隔符之间有且仅有一个自然语义的英语单词",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "MAJOR"
+}

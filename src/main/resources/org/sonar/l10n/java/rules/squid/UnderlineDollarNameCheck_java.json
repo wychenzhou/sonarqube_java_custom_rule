@@ -1,0 +1,13 @@
+{
+  "title": "所有编程相关的命名均不能以下划线或美元符号开始",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "MINOR"
+}

@@ -1,0 +1,22 @@
+<p>Can't use underline or Dollar first As Name</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+    private String _Hi;// Noncompliant
+    private String $Hi;// Noncompliant
+
+    public void test(String _Hi,String $Hi){ // Noncompliant
+    }
+
+    public void $test(){}  // Noncompliant
+
+    public void _test(){}  // Noncompliant
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+    private String Hi;
+
+    public void test(String Hi){
+    }
+
+    public void test(){}
+</pre>

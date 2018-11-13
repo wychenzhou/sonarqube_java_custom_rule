@@ -1,0 +1,13 @@
+{
+  "title": "测试类命名以它要测试的类的名称开始，以Test结尾",
+  "type": "CODE_SMELL",  
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "MAJOR"
+}

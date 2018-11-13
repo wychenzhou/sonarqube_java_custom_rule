@@ -1,0 +1,13 @@
+{
+  "title": "在if/else/for/while/do语句中必须使用大括号，即使只有一行代码",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "company"
+  ],
+  "defaultSeverity": "MAJOR"
+}

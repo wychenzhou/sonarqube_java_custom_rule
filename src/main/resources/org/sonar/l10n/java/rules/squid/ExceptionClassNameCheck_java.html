@@ -1,0 +1,17 @@
+<p>ExceptionClassNameCheck Check</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+    public  class HiClass {// Noncompliant
+    }
+
+    public  class AgeOutOfExceptionBound {// Noncompliant
+    }
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+    public abstract class AgeOutOfException {
+    }
+    
+    public  class HiClassException {
+    }
+</pre>

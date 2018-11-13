@@ -1,0 +1,33 @@
+<p>规范使用Javadoc注释</p>
+<p>所有的抽象方法(包括接口中的方法)必须要用 Javadoc 注释、除了返回值、参数、异常说明外,还必须指出该方法做什么事情,实现什么功能 </p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+	public abstract class Fum {
+	
+		/**
+		 *            
+		 */
+		public void doTheThing();    // Noncompliant, 没有方法描述
+		
+		/**
+		 * This is a method
+		 * 
+		 * @param a
+		 * @return
+		 */
+		public int doTheThingBetter(int a) throws IOException; // Noncompliant, 没有@throws信息 
+	}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+	public abstract class Fum {
+	
+		/**
+		 * This is a method
+		 * @param a
+		 * @return
+		 * @throws IOException
+		 */
+		public int doTheThingBetter(int a) throws IOException;
+	} 
+</pre>

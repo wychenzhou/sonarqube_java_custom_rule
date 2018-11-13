@@ -1,0 +1,13 @@
+{
+  "title": "不能使用过时的类或方法",
+  "type": "CODE_SMELL",  
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "INFO"
+}

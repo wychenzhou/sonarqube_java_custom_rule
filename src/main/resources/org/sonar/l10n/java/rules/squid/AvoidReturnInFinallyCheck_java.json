@@ -1,0 +1,13 @@
+{
+  "title": "不能在finally块中使用return，finally块中的return返回后方法结束执行，不会再执行try块中的return语句",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "company"
+  ],
+  "defaultSeverity": "MAJOR"
+}

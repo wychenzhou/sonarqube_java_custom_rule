@@ -1,0 +1,28 @@
+<p>一旦被弃用，类、接口及其子类就不能被使用、继承、扩展,弃用是警告一个类或接口已被取代，并最终被删除</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+@Deprecated
+public class Fum { ... }
+
+public class Foo {
+ 
+  @Deprecated
+  public void doTheThing() { ... }
+
+  public void doTheThingBetter() { ... }
+}
+
+public class Bar extends Foo {
+  public void doTheThing() { ... } // Noncompliant; don't override a deprecated method or explicitly mark it as @Deprecated
+}
+
+public class Bar extends Fum {  // Noncompliant; Fum is deprecated
+
+  public void myMethod() {
+    Foo foo = new Foo();  // okay; the class isn't deprecated
+    foo.doTheThing();  // Noncompliant; doTheThing method is deprecated
+  }
+}
+</pre>
+
+

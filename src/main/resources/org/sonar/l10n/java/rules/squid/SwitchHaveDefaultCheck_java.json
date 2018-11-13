@@ -1,0 +1,13 @@
+{
+	"title": "在一个switch块内，都必须包含一个default语句",
+	"type": "CODE_SMELL",
+	"status": "ready",
+	"remediation": {
+		"func": "Constant\/Issue",
+		"constantCost": "5min"
+	},
+	"tags": [
+		"pitfall"
+	],
+	"defaultSeverity": "MAJOR"
+}

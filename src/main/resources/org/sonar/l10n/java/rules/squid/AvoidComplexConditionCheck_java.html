@@ -1,0 +1,16 @@
+<p>不要在条件判断中执行复杂的语句，将复杂逻辑判断的结果赋值给一个有意义的布尔变量，以提高可读性</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+	if ("jenfire".equals(name) && "iamcz".endsWith("cz")
+			|| a > 10 && "JenFire".startsWith("Jen") && a < 20) {
+	}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+	boolean isName = "jenfire".equals(name) && "iamcz".endsWith("cz")
+				|| a > 10 && "JenFire".startsWith("Jen") && a < 20;
+				
+	if(isName) {
+			
+	}
+</pre>

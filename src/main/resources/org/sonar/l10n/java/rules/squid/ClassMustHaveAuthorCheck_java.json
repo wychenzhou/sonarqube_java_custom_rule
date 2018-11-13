@@ -1,0 +1,13 @@
+{
+  "title": "所有的类都必须添加创建者信息",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "company"
+  ],
+  "defaultSeverity": "Minor"
+}

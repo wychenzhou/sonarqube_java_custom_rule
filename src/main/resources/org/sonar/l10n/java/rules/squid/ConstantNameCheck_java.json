@@ -1,0 +1,13 @@
+{
+  "title": "常量命名应该全部大写，单词间用下划线隔开，力求语义表达完整清楚",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "MAJOR"
+}

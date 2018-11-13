@@ -1,0 +1,13 @@
+{
+  "title": "返回类型为基本数据类型，return包装数据类型的对象时，自动拆箱有可能产生NPE",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "company"
+  ],
+  "defaultSeverity": "MAJOR"
+}

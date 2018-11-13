@@ -1,0 +1,13 @@
+{
+  "title": "所有的枚举类型字段必须要有注释，说明每个数据项的用途",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "company"
+  ],
+  "defaultSeverity": "Minor"
+}

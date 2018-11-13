@@ -1,0 +1,13 @@
+{
+  "title": "iBATIS自带的queryForList(String statementName,int start,int size)不推荐使用",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "company"
+  ],
+  "defaultSeverity": "MAJOR"
+}

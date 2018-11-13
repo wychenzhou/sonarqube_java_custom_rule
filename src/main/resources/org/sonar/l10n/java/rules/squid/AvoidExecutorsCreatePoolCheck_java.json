@@ -1,0 +1,13 @@
+{
+  "title": "线程池不允许使用Executors去创建，而是通过ThreadPoolExecutor的方式",
+  "type": "VULNERABILITY",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "company"
+  ],
+  "defaultSeverity": "MAJOR"
+}

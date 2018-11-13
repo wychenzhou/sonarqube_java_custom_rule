@@ -1,0 +1,13 @@
+{
+  "title": "long 或者 Long 初始赋值时，使用大写的 L,不能是小写的 l,小写容易跟数字 1 混淆，造成误解",
+  "type": "CODE_SMELL",  
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "pitfall"
+  ],
+  "defaultSeverity": "MAJOR"
+}

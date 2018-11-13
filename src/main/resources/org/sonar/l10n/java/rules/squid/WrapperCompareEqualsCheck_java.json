@@ -1,0 +1,13 @@
+{
+  "title": "所有的包装类对象之间值的比较，全部使用equals方法比较",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "company"
+  ],
+  "defaultSeverity": "Minor"
+}

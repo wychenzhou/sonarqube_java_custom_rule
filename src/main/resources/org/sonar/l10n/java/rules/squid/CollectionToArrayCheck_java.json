@@ -1,0 +1,13 @@
+{
+  "title": "使用集合转数组的方法，必须使用集合的toArray(T[] array)，传入的是类型完全一样的数组",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "company"
+  ],
+  "defaultSeverity": "Minor"
+}

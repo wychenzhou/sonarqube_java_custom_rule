@@ -1,0 +1,13 @@
+{
+  "title": "线程资源必须通过线程池提供，不允许在应用中自行显式创建线程 ",
+  "type": "VULNERABILITY",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "company"
+  ],
+  "defaultSeverity": "MAJOR"
+}

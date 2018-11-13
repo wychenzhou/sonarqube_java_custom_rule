@@ -1,0 +1,22 @@
+<p>共享一些命名约定是使团队有效协作的关键,此规则检查,中括号是数组类型的一部分,数组定义如下：String[] args</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+    private String errorTemp[];// Noncompliant
+
+    private String[] rightTemp;
+
+    public void getTemp(String noTemp[]){// Noncompliant
+        int intHi[];// Noncompliant
+        int[] intNo;
+    }
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+    private String[] errorTemp;
+    private String[] rightTemp;
+
+    public void getTemp(String[] noTemp){
+        int[] intHi;
+        int[] intNo;
+    }
+</pre>

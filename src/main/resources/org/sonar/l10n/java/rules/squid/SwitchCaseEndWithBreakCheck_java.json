@@ -1,0 +1,13 @@
+{
+	"title": "在一个switch块内，每个case通过break/return等来终止",
+	"type": "CODE_SMELL",
+	"status": "ready",
+	"remediation": {
+		"func": "Constant\/Issue",
+		"constantCost": "5min"
+	},
+	"tags": [
+		"pitfall"
+	],
+	"defaultSeverity": "MINOR"
+}

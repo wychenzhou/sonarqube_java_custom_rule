@@ -1,0 +1,13 @@
+{
+  "title": "在使用正则表达式时，利用好其预编译功能，可以有效加快正则匹配速度",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "company"
+  ],
+  "defaultSeverity": "Minor"
+}

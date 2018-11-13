@@ -1,0 +1,13 @@
+{
+  "title": "获取当前毫秒数：System.currentTimeMillis(); 而不是new Date().getTime()",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "1min"
+  },
+  "tags": [
+    "company"
+  ],
+  "defaultSeverity": "INFO"
+}

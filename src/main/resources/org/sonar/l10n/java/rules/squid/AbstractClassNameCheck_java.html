@@ -1,0 +1,17 @@
+<p>共享一些命名约定是使团队有效协作的关键,此规则允许检查所有抽象类名使用Abstract或Base开头</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+    public abstract class HiClass {// Noncompliant
+    }
+
+    public abstract class MyNameIsAbstract {// Noncompliant
+    }
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+    public abstract class AbstractMysql {
+    }
+
+    public abstract class BaseMysql {
+    }
+</pre>
