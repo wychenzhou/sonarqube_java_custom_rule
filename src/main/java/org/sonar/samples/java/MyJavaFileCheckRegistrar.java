@@ -6,7 +6,7 @@ import org.sonar.plugins.java.api.JavaCheck;
 import org.sonarsource.api.sonarlint.SonarLintSide;
 
 /**
- * 提供将在源代码分析期间执行的“检查”（规则的实现）类。
+ * 提供将在源代码分析期间执行的"检查"(规则的实现)类。
  * 该类是批量扩展，通过实现{@link org.sonar.plugins.java.api.CheckRegistrar}接口。
  * 
  * @author chenzhou

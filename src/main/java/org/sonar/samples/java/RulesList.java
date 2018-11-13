@@ -1,6 +1,7 @@
 package org.sonar.samples.java;
 
 import com.google.common.collect.ImmutableList;
+
 import java.util.List;
 
 import org.sonar.plugins.java.api.JavaCheck;
@@ -46,41 +47,41 @@ import org.sonar.samples.java.checks.set.SubListNotCastArrayListCheck;
 
 /**
  * 用于规则扩展
- * 
+ *
  * @author chenzhou
  */
 public final class RulesList {
 
-	private RulesList() {
-	}
+    private RulesList() {
+    }
 
-	public static List<Class> getChecks() {
-		return ImmutableList.<Class>builder().addAll(getJavaChecks()).addAll(getJavaTestChecks()).build();
-	}
+    public static List<Class> getChecks() {
+        return ImmutableList.<Class>builder().addAll(getJavaChecks()).addAll(getJavaTestChecks()).build();
+    }
 
-	public static List<Class<? extends JavaCheck>> getJavaChecks() {
-		return ImmutableList.<Class<? extends JavaCheck>>builder().add(AbstractClassNameCheck.class)
-				.add(ArrayNameCheck.class).add(BooleanPropertyNameCheck.class).add(ConstantNameCheck.class)
-				.add(ExceptionClassNameCheck.class).add(LowerCameCaseVariableNameCheck.class)
-				.add(PackageNameCheck.class).add(TestClassNameCheck.class).add(UnderlineDollarNameCheck.class)
-				.add(UpperCameCaseClassNameCheck.class).add(AviodUseDeprecatedCheck.class).add(UpperEllRuleCheck.class)
-				.add(OverrideAnnotationAddCheck.class).add(AvoidUseMagicNumberCheck.class)
-				.add(ClassMustHaveAuthorCheck.class).add(ClassMethodVarDocCheck.class)
-				.add(EnumConstantsMustHaveCommentCheck.class).add(AvoidNewDateGetTimeCheck.class)
-				.add(AvoidBeanUtilsCopyCheck.class).add(AvoidIBatisQueryListCheck.class) // 20
-				.add(RandomNotToIntCheck.class).add(AvoidExecutorsCreatePoolCheck.class)
-				.add(SubListNotCastArrayListCheck.class).add(CollectionInitShouldAssignCapacityCheck.class)
-				.add(CollectionToArrayCheck.class).add(AvoidReturnInFinallyCheck.class)
-				.add(AvoidComplexConditionCheck.class).add(WrapperCompareEqualsCheck.class)
-				.add(MethodReturnWrapperCheck.class).add(MultilineBlocksCurlyCheck.class)
-				.add(AbsAndInterMethodMustDocCheck.class).add(RegexPatternCompileCheck.class)
-				.add(CreateThreadShouldPoolCheck.class).add(ServiceOrDaoImplClassNameCheck.class)
-				.add(AvoidInstanceForStaticMethodCheck.class) // 35
-				.add(StringOrNotNullInsideEquailsCheck.class).add(SwitchHaveDefaultCheck.class)
-				.add(SwitchCaseEndWithBreakCheck.class).add(SwitchDefaultMustLastCheck.class).build();
-	}
+    public static List<Class<? extends JavaCheck>> getJavaChecks() {
+        return ImmutableList.<Class<? extends JavaCheck>>builder().add(AbstractClassNameCheck.class)
+                .add(ArrayNameCheck.class).add(BooleanPropertyNameCheck.class).add(ConstantNameCheck.class)
+                .add(ExceptionClassNameCheck.class).add(LowerCameCaseVariableNameCheck.class)
+                .add(PackageNameCheck.class).add(TestClassNameCheck.class).add(UnderlineDollarNameCheck.class)
+                .add(UpperCameCaseClassNameCheck.class).add(AviodUseDeprecatedCheck.class).add(UpperEllRuleCheck.class)
+                .add(OverrideAnnotationAddCheck.class).add(AvoidUseMagicNumberCheck.class)
+                .add(ClassMustHaveAuthorCheck.class).add(ClassMethodVarDocCheck.class)
+                .add(EnumConstantsMustHaveCommentCheck.class).add(AvoidNewDateGetTimeCheck.class)
+                .add(AvoidBeanUtilsCopyCheck.class).add(AvoidIBatisQueryListCheck.class)
+                .add(RandomNotToIntCheck.class).add(AvoidExecutorsCreatePoolCheck.class)
+                .add(SubListNotCastArrayListCheck.class).add(CollectionInitShouldAssignCapacityCheck.class)
+                .add(CollectionToArrayCheck.class).add(AvoidReturnInFinallyCheck.class)
+                .add(AvoidComplexConditionCheck.class).add(WrapperCompareEqualsCheck.class)
+                .add(MethodReturnWrapperCheck.class).add(MultilineBlocksCurlyCheck.class)
+                .add(AbsAndInterMethodMustDocCheck.class).add(RegexPatternCompileCheck.class)
+                .add(CreateThreadShouldPoolCheck.class).add(ServiceOrDaoImplClassNameCheck.class)
+                .add(AvoidInstanceForStaticMethodCheck.class)
+                .add(StringOrNotNullInsideEquailsCheck.class).add(SwitchHaveDefaultCheck.class)
+                .add(SwitchCaseEndWithBreakCheck.class).add(SwitchDefaultMustLastCheck.class).build();
+    }
 
-	public static List<Class<? extends JavaCheck>> getJavaTestChecks() {
-		return ImmutableList.<Class<? extends JavaCheck>>builder().build();
-	}
+    public static List<Class<? extends JavaCheck>> getJavaTestChecks() {
+        return ImmutableList.<Class<? extends JavaCheck>>builder().build();
+    }
 }

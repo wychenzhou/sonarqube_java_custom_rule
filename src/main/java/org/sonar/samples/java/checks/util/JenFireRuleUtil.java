@@ -7,6 +7,9 @@ import org.sonar.plugins.java.api.tree.MemberSelectExpressionTree;
 import org.sonar.plugins.java.api.tree.MethodInvocationTree;
 import org.sonar.plugins.java.api.tree.Tree;
 
+/**
+ * @author chenzhou
+ */
 public class JenFireRuleUtil {
 
 	public static IdentifierTree methodName(MethodInvocationTree mit) {

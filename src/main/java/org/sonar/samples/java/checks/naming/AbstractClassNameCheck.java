@@ -12,30 +12,28 @@ import org.sonar.plugins.java.api.tree.ClassTree;
 import org.sonar.samples.java.checks.PrinterVisitor;
 
 /**
- * 
- * 抽象类命名使用 Abstract 或 Base 开头
- * 
  * @author chenzhou
- *
+ * <p>
+ * 抽象类命名使用 Abstract 或 Base 开头
  */
 @Rule(key = "AbstractClassNameCheck")
-
 public class AbstractClassNameCheck extends BaseTreeVisitor implements JavaFileScanner {
-	private JavaFileScannerContext context;
-	private static final String ISSUE_MSG = "抽象类命名使用Abstract或Base开头";
-	private static final Pattern PATTERN = Pattern.compile("^(Abstract|Base).*");
+    private static final String ISSUE_MSG = "抽象类命名使用Abstract或Base开头";
+    private static final Pattern PATTERN = Pattern.compile("^(Abstract|Base).*");
+    private JavaFileScannerContext context;
 
-	public void scanFile(JavaFileScannerContext context) {
-		this.context = context;
-		scan(context.getTree());
-	}
+    @Override
+    public void scanFile(JavaFileScannerContext context) {
+        this.context = context;
+        scan(context.getTree());
+    }
 
-	@Override
-	public void visitClass(ClassTree tree) {
-		String className = tree.simpleName().name();
-		if (tree.symbol().isAbstract() && !PATTERN.matcher(className).matches()) {
-			context.reportIssue(this, tree, ISSUE_MSG);
-		}
-		super.visitClass(tree);
-	}
+    @Override
+    public void visitClass(ClassTree tree) {
+        String className = tree.simpleName().name();
+        if (tree.symbol().isAbstract() && !PATTERN.matcher(className).matches()) {
+            context.reportIssue(this, tree, ISSUE_MSG);
+        }
+        super.visitClass(tree);
+    }
 }
